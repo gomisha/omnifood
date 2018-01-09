@@ -17,3 +17,26 @@ html {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(../img/hero.jpg);
+    height: 100vh;
+    
+    /* make entire image fit in viewport and centered */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+h1 {
+    /* override normalize.css margins which leave a gap at the top */
+    margin: 0;
+}
+
+.hero-text-box {
+    /* centers everything right in the middle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
