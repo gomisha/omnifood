@@ -208,10 +208,22 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* ------------------------------ */
+/* FEATURES */
+/* ------------------------------ */
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
 
 /* ------------------------------ */
 /* MEALS */
 /* ------------------------------ */
+
+.section-meals {
+    padding: 0;   
+}
 
 .meals-showcase {
     list-style: none;
@@ -228,9 +240,19 @@ header {
 .meal-photo {
     width: 100%;
     margin: 0; /* override margin in nomarlize.css */
+    overflow: hidden; /* prevents image overflow from being visible in container */
+    background-color: #000; /* overlays color over partially transparent image */
 }
 
 .meal-photo img {
+    opacity: .7; /* initially have some transparency - before hover */
     width: 100%;
     height: auto;
+    transform: scale(1.15);
+    transition: transform .5s, opacity .5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1; /* on hover, go back to full opaque */
+    transform: scale(1.03); /* scaled to a little above 1 so that no white line is left */
 }
