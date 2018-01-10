@@ -373,3 +373,32 @@ header {
 .city-feature {
     margin-bottom: 5px;
 }
+
+/* ------------------------------ */
+/* TESTIMONIALS */
+/* ------------------------------ */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(../img/back-customers.jpg);
+}
+
+.section-testimonials h2 {
+    color: #fff;
+}
+
+.section-testimonials img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 20%;
+    
+    /* vertically align icons with text */
+    vertical-align: middle;
+}
+
+.testimonial-quote {
+    display: inline-block;
+    color: #fff;
+    font-style: italic;
+    font-size: 100%;
+
+}
