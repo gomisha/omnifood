@@ -52,6 +52,14 @@ section {
     padding: 1%;
 }
 
+.background-image {
+    height: 100vh;
+    
+    /* make entire image fit in viewport and centered */
+    background-size: cover;
+    background-position: center;
+}
+
 /* ---- HEADINGS ---- */
 
 h1, h2, h3 {
@@ -199,12 +207,6 @@ a:hover, a:active {
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(../img/hero.jpg);
-    height: 100vh;
-    
-    /* make entire image fit in viewport and centered */
-    background-size: cover;
-    background-position: center;
-    
 }
 
 .hero-text-box {
