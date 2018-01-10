@@ -349,16 +349,19 @@ header {
 
 .city-feature a {
     
-    
 }
 
 .city-feature a:link, a:visited {
-    text-decoration: underline;
+    text-decoration: none;
     color: #e67e22;
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+    transition: border-bottom .2s, color .2s;
 
 }
 
 .city-feature a:hover, a:active {
     text-decoration: none;
     color: #555;
+    border-bottom: 1px solid transparent;
 }
