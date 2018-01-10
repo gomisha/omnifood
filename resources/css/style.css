@@ -58,6 +58,7 @@ section {
     /* make entire image fit in viewport and centered */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 /* ---- HEADINGS ---- */
@@ -379,26 +380,42 @@ header {
 /* ------------------------------ */
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(../img/back-customers.jpg);
-}
-
-.section-testimonials h2 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/back-customers.jpg);
     color: #fff;
+    padding: 2%;
 }
 
-.section-testimonials img {
-    display: inline-block;
-    border-radius: 50%;
-    width: 20%;
-    
-    /* vertically align icons with text */
-    vertical-align: middle;
-}
-
-.testimonial-quote {
-    display: inline-block;
-    color: #fff;
+blockquote {
+    padding: 2%;
     font-style: italic;
-    font-size: 100%;
-
+    line-height: 145%
+    position: relative;
+    margin-top: 40px;
 }
+
+.blockquote-testimonial {
+    position: relative;
+}
+
+blockquote::before {
+    content: "\201C"; /* https://css-tricks.com/snippets/html/glyphs/ */
+    font-size: 500%;
+    display: block;
+    
+    position: absolute;
+    left: -5px;
+    top: -55px;
+}
+
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+cite img {
+    border-radius: 50%;
+    vertical-align: middle;
+    height: 45px; /* keep testimonial image same size even when resizing  */
+}
+
