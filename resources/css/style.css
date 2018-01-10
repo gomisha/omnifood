@@ -131,6 +131,24 @@ h3 {
 
 /* ---- BUTTONS ---- */
 
+a:link, a:visited {
+    text-decoration: none;
+    color: #e67e22;
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+    transition: border-bottom .2s, color .2s;
+
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
+/* ---- BUTTONS ---- */
+
 .btn:link,
 .btn:visited {
     /* allows padding, margin, width, height to be set for <a> element */
@@ -327,6 +345,13 @@ header {
     margin-right: 25px;
 }
 
+/* over-rides default <a> behavior since these are image links */
+.btn-app:link,
+.btn-app:visited
+{
+    border: 0;
+}
+
 .btn-app img {
     height: 50px;
     width: auto;
@@ -345,23 +370,4 @@ header {
 
 .city-feature {
     margin-bottom: 5px;
-}
-
-.city-feature a {
-    
-}
-
-.city-feature a:link, a:visited {
-    text-decoration: none;
-    color: #e67e22;
-    padding-bottom: 2px;
-    border-bottom: 1px solid;
-    transition: border-bottom .2s, color .2s;
-
-}
-
-.city-feature a:hover, a:active {
-    text-decoration: none;
-    color: #555;
-    border-bottom: 1px solid transparent;
 }
