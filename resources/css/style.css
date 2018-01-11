@@ -388,23 +388,18 @@ header {
 blockquote {
     padding: 2%;
     font-style: italic;
-    line-height: 145%
-    position: relative;
+    line-height: 145%;
     margin-top: 40px;
-}
-
-.blockquote-testimonial {
     position: relative;
 }
 
 blockquote::before {
-    content: "\201C"; /* https://css-tricks.com/snippets/html/glyphs/ */
+    content: "\201C";  /* quote symbol from: https://css-tricks.com/snippets/html/glyphs/  */
     font-size: 500%;
     display: block;
-    
     position: absolute;
+    top: -5px;
     left: -5px;
-    top: -55px;
 }
 
 cite {
