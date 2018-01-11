@@ -1,5 +1,6 @@
 /*
 Orange color: #e67e22
+Gray color : #f4f4f4;
 */
 
 
@@ -412,5 +413,20 @@ cite img {
     border-radius: 50%;
     vertical-align: middle;
     height: 45px; /* keep testimonial image same size even when resizing  */
+}
+
+/* ------------------------------ */
+/* PLANS */
+/* ------------------------------ */
+
+
+.section-plans {
+    background-color: #f4f4f4;;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
 }
 
