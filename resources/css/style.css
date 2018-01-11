@@ -1,6 +1,9 @@
 /*
 Orange color: #e67e22
 Gray color : #f4f4f4;
+
+DEBUG:
+border: 1px solid red; 
 */
 
 
@@ -160,7 +163,8 @@ a:hover, a:active {
 /* ---- BUTTONS ---- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     /* allows padding, margin, width, height to be set for <a> element */
     display: inline-block;
     padding: 10px 30px;
@@ -168,11 +172,11 @@ a:hover, a:active {
     text-decoration: none;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
-    
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -186,14 +190,17 @@ a:hover, a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     /* picked darker shade from: http://www.0to255.com/e67e22 */
     background-color: #cf6d17;
     
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit] {
     border: 1px solid #cf6d17;
 }
 
@@ -419,7 +426,6 @@ cite img {
 /* PLANS */
 /* ------------------------------ */
 
-
 .section-plans {
     background-color: #f4f4f4;
 }
@@ -472,4 +478,36 @@ cite img {
 
 .plan-price-meal {
     font-size: 80%
+}
+
+/* ------------------------------ */
+/* CONTACT */
+/* ------------------------------ */
+
+.contact-form {
+    width: 60%;
+    margin: 30px auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc; /* nice subtle border for form elements */
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0px;
+}
+
+/* removes border when select form element */
+*:focus {
+    outline: none;
 }
