@@ -14,6 +14,7 @@ border: 1px solid red;
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -149,6 +150,7 @@ a:link, a:visited {
     color: #e67e22;
     padding-bottom: 2px;
     border-bottom: 1px solid;
+    -webkit-transition: border-bottom .2s, color .2s;
     transition: border-bottom .2s, color .2s;
 
 }
@@ -171,6 +173,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -215,6 +218,7 @@ input[type=submit] {
 /* ------------------------------ */
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.71)), to(rgba(0, 0, 0, 0.71))), url(../img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(../img/hero.jpg);
 }
 
@@ -224,6 +228,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -255,6 +260,7 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom .2s;
     transition: border-bottom .2s;
 }
 
@@ -301,12 +307,17 @@ header {
     opacity: .7; /* initially have some transparency - before hover */
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    transition: opacity .5s, -webkit-transform .5s;
     transition: transform .5s, opacity .5s;
+    transition: transform .5s, opacity .5s, -webkit-transform .5s;
 }
 
 .meal-photo img:hover {
     opacity: 1; /* on hover, go back to full opaque */
+    -webkit-transform: scale(1.03);
     transform: scale(1.03); /* scaled to a little above 1 so that no white line is left */
 }
 
@@ -389,6 +400,7 @@ header {
 /* ------------------------------ */
 
 .section-testimonials {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .8)), to(rgba(0, 0, 0, .8))), url(../img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/back-customers.jpg);
     color: #fff;
     padding: 2%;
@@ -436,6 +448,7 @@ cite img {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
+    -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
 }
 
@@ -552,6 +565,7 @@ footer {
     text-decoration: none;
     border: none;
     color: #888;
+    -webkit-transition: color .2s;
     transition: color .2s;
 }
 
@@ -571,6 +585,7 @@ footer {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
+    -webkit-transition: color .2s;
     transition: color .2s;
 }
 
