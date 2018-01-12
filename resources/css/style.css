@@ -17,7 +17,7 @@ border: 1px solid red;
     box-sizing: border-box;
 }
 
-html {
+html, body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
@@ -27,6 +27,7 @@ html {
     
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 } 
 
 .clearfix {zoom:1}
@@ -49,7 +50,7 @@ html {
 }
 
 section {
-    padding: 40px 0px;
+    padding: 80px 0px;
 }
 
 .box {
@@ -110,7 +111,6 @@ h3 {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
-    text-align: justify;
 }
 
 .box p {
@@ -219,6 +219,7 @@ header {
 }
 
 .hero-text-box {
+    width: 1140px;
     /* centers everything right in the middle */
     position: absolute;
     top: 50%;
@@ -267,9 +268,7 @@ header {
 /* FEATURES */
 /* ------------------------------ */
 
-.section-features .long-copy {
-    margin-bottom: 30px;
-}
+.section-features .long-copy { margin-bottom: 30px; }
 
 /* ------------------------------ */
 /* MEALS */
@@ -319,13 +318,15 @@ header {
     background-color: #f4f4f4;
 }
 
+.steps-box { margin-top: 30px; }
+
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
-    margin-top: 30px;
 }
 
 .steps-box:last-child {
+    text-align: left;
     padding-left: 3%;
     margin-top: 70px;
 }
