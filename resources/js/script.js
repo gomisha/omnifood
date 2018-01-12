@@ -6,19 +6,7 @@ $(document).ready(function() {
         else {
             $('nav').removeClass('sticky');
         }
+    }, {
+        offset: '60px' //create sticky nav menu before reach end of section
     });
-   //$('h1').click(function() {
-//       $(this).css('background-color', '#ff0000');
-//   })
-    
-    /*
-    
-var waypoint = new Waypoint({
-  element: document.getElementById('element-waypoint'),
-  handler: function(direction) {
-    notify(this.element.id + ' triggers at ' + this.triggerPoint)
-  },
-  offset: '75%'
-})    
-    */
 });
