@@ -105,4 +105,38 @@ $(document).ready(function() {
         }
     });
     
+    //GOOGLE MAPS
+    var map = new GMaps({
+        div: '.map',
+        lat: 43.6565336,
+        lng: -79.6017211,
+        zoom: 12
+    });    
+        //43.6565336,-79.6017211
+        
+    map.addMarker({
+        lat: 43.6565336,
+        lng: -79.7,
+        title: 'Toronto',
+        infoWindow: {
+            content: '<p>Omnifood Toronto</p>'
+        }
+
+    });
+        /*
+        
+        map.addMarker({
+          lat: -12.043333,
+          lng: -77.028333,
+          title: 'Lima',
+          infoWindow: {
+            content: '<p>HTML Content</p>'
+            }
+          click: function(e) {
+            alert('You clicked in this marker');
+          }
+        });        
+        */
+    
+    
 });
