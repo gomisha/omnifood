@@ -248,7 +248,7 @@ header {
     display: none; /* hide logo when not in sticky scrolling mode */
 }
 
-/*** MAIN NAV ***/
+/*** MAIN NAVIGATION ***/
 
 .main-nav {
     float: right;
@@ -277,6 +277,20 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+/*** MOBILE NAV ***/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer; /* no href specified so need to set pointer cursor explicitly */
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
 }
 
 /*** STICKY NAV ***/
